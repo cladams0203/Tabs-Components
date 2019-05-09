@@ -48,16 +48,15 @@ class TabItem {
   }
 
   select() {
-// //     // Select all ".tabs-item" elements from the DOM
+     // Select all ".tabs-item" elements from the DOM
     const items = document.querySelectorAll('.tabs-item');
-    console.log(items);
-// //     // Remove the class "tabs-item-selected" from each element
+    
+     // Remove the class "tabs-item-selected" from each element
     Array.from(items).forEach((e) => {
       e.classList.remove('tabs-item-selected');
-      // console.log(e);
     });
     
-// //     // Add a class named "tabs-item-selected" to this element
+    // Add a class named "tabs-item-selected" to this element
     this.item.classList.add('tabs-item-selected');
   }
 }
